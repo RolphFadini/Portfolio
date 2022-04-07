@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menu"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+   
+    <main>
+        <section class="main-page">
+            <div class="textBx">
+                <h2>Hello, I am<br><span>Rolph da Luz Fadini</span></h2>
+                <h3>And I study Computer Science at University of Vila Velha</h3>
+                <a href="#" class="btn">About Me</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx img">
+                    <h3>I study Computer Science at University of Vila Velha</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis laudantium velit quasi magni architecto officia aspernatur nobis, cupiditate doloribus expedita soluta consequuntur molestiae fugiat porro, nesciunt minima id sint maiores.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis laudantium velit quasi magni architecto officia aspernatur nobis, cupiditate doloribus expedita soluta consequuntur molestiae fugiat porro, nesciunt minima id sint maiores.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo minima doloribus! Praesentium quod nobis dolor eius inventore consequatur adipisci nisi sit mollitia natus aliquid ratione nulla, corrupti deserunt nihil!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis laudantium velit quasi magni architecto officia aspernatur nobis, cupiditate doloribus expedita soluta consequuntur molestiae fugiat porro, nesciunt minima id sint maiores.</p>
+                </div>
+                <div class="img">
+                    <img src="imgs/img1.png" alt="GitHub Profile">
+                </div>
+            </div>
+        </section>
+        
+        <!--Comando para fazer com que a div "menu" permaneça presente na tela ao scrollar-->
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+        </script>
+
+        <section class="projects">
+            <div class="heading">
+                <h2>My Lastest Projects</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <div class="projectsBx">
+                    <p class="img-title">Rock Paper Scissor</p>   
+                    <a href="https://github.com/RolphFadini/Pedra-Papel-Tesoura" target="_blank">  
+                        <img src="imgs/project3.png" alt="Rock Paper Scissor game"></a>
+                </div>
+                <div class="projectsBx">
+                    <p class="img-title">BMI Calculator</p>   
+                    <a href="https://github.com/RolphFadini/Calculadora-IMC" target="_blank">  
+                        <img src="imgs/project3.png" alt="BMI Calculator"></a>
+                </div>
+                <div class="projectsBx">
+                    <p class="img-title">Timer</p>  
+                    <a href="#" target="_blank">  
+                        <img src="imgs/project3.png" alt="Timer"></a>
+                </div>
+            </div>
+                <div class="heading">
+                    <a href="https://github.com/RolphFadini?tab=repositories" target="_blank" class="btn">View More</a>
+                </div>
+        </section>
+
+    </main> 
+    
+    <footer>
+    </footer>
+</body>
+</html>

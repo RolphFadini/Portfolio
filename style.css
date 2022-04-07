@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarala', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+.main-page {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fde3ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page h2 {
+    font-size: 3em;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.main-page h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main-page h3 {
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #895689;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #bd9cbd; 
+}
+
+.btn:hover {
+    background-color: #571F57;
+    color: #ffcaff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+
+header.sticky {
+    background: #fde3ff;
+    padding: 30px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1)
+}
+
+header .logo {
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about {
+    min-height: 100vh;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding-right: 70px;
+}
+
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.img {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.projects {
+    background-color: #fde3ff;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects .content .projectsBx {
+    padding: 20px;
+    width: 500px;
+}
+
+.projects .content .projectsBx .img-title {
+    text-align: center;
+}
+
+.projects .content .projectsBx img {
+    width: 100%;
+}
